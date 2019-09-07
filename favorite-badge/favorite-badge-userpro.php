@@ -70,13 +70,13 @@ function real_get_user_fav_posts_badges($post_id = NULL) {
 		$badge_id = '1701';
 		$auth_badge_id = '1801';
     
-    /**
-     * Change this condition according to your requirements.
-     * Here checking how many times
-     * a user has favorited posts
-     * counting from 10 to 150+
-     * and giving badges according to achived points
-     */
+		/**
+		 * Change this condition according to your requirements.
+		 * Here checking how many times
+		 * a user has favorited posts
+		 * counting from 10 to 150+
+		 * and giving badges according to achived points
+		 */
 		if($user_favorites > 9) {
 			if($user_favorites >= 150) {
 				$badge_url = 'https://www.YOUR_DOMAIN.com/wp-content/plugins/userpro/addons/badges/badges/fav_user_5.png';
@@ -124,13 +124,13 @@ function real_get_user_fav_posts_badges($post_id = NULL) {
 			update_user_meta($user_id, '_userpro_badges', $user_badges);
 		}
     
-    /**
-     * Change this condition according to your requirements.
-     * Here checking how many times
-     * a author has achieved favorite counts
-     * counting from 10 to 150+
-     * and giving badges according to achived points
-     */
+		/**
+		 * Change this condition according to your requirements.
+		 * Here checking how many times
+		 * a author has achieved favorite counts
+		 * counting from 10 to 150+
+		 * and giving badges according to achived points
+		 */
 		if($author_favorites > 9) {
 			if($author_favorites >= 150) {
 				$auth_badge_url = 'https://www.YOUR_DOMAIN.com/wp-content/plugins/userpro/addons/badges/badges/fav_tipser_5.png';
